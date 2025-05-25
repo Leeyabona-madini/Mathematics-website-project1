@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Designed by Lee</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .banner {
+      width: 100%;
+      min-height: 100vh;
+      background: url('images.1/logo.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: rgba(0, 0, 0, 0.5);
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      width: 60px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-left: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .content {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .explore-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ffcc00;
+      color: #1e3c72;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .explore-btn:hover {
+      background-color: #ffaa00;
+      transform: scale(1.05);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .content h1 {
+        font-size: 2rem;
+      }
+
+      .explore-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content h1 {
+        font-size: 1.5rem;
+      }
+
+      .explore-btn {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="navbar">
+      <img class="logo" src="images.1/logo.jpg" alt="Logo" />
+      <ul>
+        <li><a href="mailto:liyabonamadini275@gmail.com">📧 E-mail us</a></li>
+        <li><a href="https://wa.me/27738390817" target="_blank">💬 WhatsApp Examples</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>EXPLORE THE MATHEMATICS</h1>
+      <a href="about.html" class="explore-btn">EXPLORE</a>
+    </div>
+  </div>
+
+</body>
+</html>
